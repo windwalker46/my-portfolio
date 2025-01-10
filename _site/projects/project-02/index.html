@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zero Trust Network Traffic Analysis</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+  <main>
+    
+<div class="project-details">
+  <h1>Zero Trust Network Traffic Analysis</h1>
+  <p>A JavaFX application for real-time network traffic analysis focused on Zero Trust security and anomaly detection. The system integrates with Snort for intrusion detection and prevention, provides a demo mode for testing, and offers custom rule-based monitoring.</p>
+
+  <div class="project-content">
+    <div class="project-info">
+      
+        <h3>Technologies Used:</h3>
+        <ul>
+          
+            <li>Java</li>
+          
+            <li>JavaFX</li>
+          
+            <li>Snort</li>
+          
+            <li>Gradle</li>
+          
+        </ul>
+      
+
+      
+        <p><a href="https://github.com/windwalker46/ZeroTrustTrafficAnalysis" target="_blank">GitHub Repository</a></p>
+      
+
+      
+        <h3>How to Run:</h3>
+        <pre><code class="language-bash">**Installation &amp; Setup:** 1. Clone the repository:
+   ```
+   git clone https://github.com/windwalker46/ZeroTrustTrafficAnalysis.git
+   cd ZeroTrustTrafficAnalysis
+   ```
+2. Run the application:
+   - For Linux/macOS: `./gradlew clean build run`
+   - For Windows: `.&#92;gradlew clean build run`
+
+3. (Optional) Configure Snort:
+   - Install and set up Snort to log alerts.
+   - Start Snort in IDS or IPS mode using provided batch scripts.
+
+**Key Features:** - Zero Trust monitoring with customizable rules. - Integration with Snort for real-time alerts. - Demo mode for testing without Snort. - JavaFX GUI for alert management, email notifications, and report generation.
+</code></pre>
+      
+    </div>
+
+    
+      <div class="project-images">
+        <h3>Screenshots:</h3>
+        
+          <img src="/assets/screenshot1.jpg" alt="Screenshot of Zero Trust Network Traffic Analysis">
+        
+      </div>
+    
+  </div>
+
+  <!-- Important: render the rest of the Markdown body -->
+  <h1>Zero Trust Network Traffic Analysis</h1>
+<h2>Overview</h2>
+<p>This project is a real-time network traffic monitoring and alerting system built using JavaFX. It focuses on Zero Trust principles by allowing users to define custom rules to block or flag suspicious traffic. The application integrates with Snort for intrusion detection and prevention but also provides a demo mode for presentations and testing when Snort is unavailable.</p>
+<h2>Key Features</h2>
+<ul>
+<li>
+<p><strong>Custom Rule Monitoring:</strong></p>
+<ul>
+<li>Define blacklists, whitelists, port monitoring, protocol anomalies, and time-based access in <code>manual_rules.json</code>.</li>
+<li>Dynamically apply rules to live or demo alerts.</li>
+</ul>
+</li>
+<li>
+<p><strong>Snort Integration:</strong></p>
+<ul>
+<li>Monitor Snort's alert logs in real-time.</li>
+<li>Operate in IDS (detection) or IPS (prevention) mode.</li>
+</ul>
+</li>
+<li>
+<p><strong>User-Friendly JavaFX GUI:</strong></p>
+<ul>
+<li>View and manage alerts in a table format.</li>
+<li>Buttons for clearing alerts, generating reports, and sending email summaries.</li>
+</ul>
+</li>
+<li>
+<p><strong>Demo Mode:</strong></p>
+<ul>
+<li>Automatically activates when Snort is not running.</li>
+<li>Displays sample alerts for testing and showcasing functionality.</li>
+</ul>
+</li>
+<li>
+<p><strong>Batch Scripts for Snort Modes:</strong></p>
+<ul>
+<li><code>start_snort_ids.bat</code>: Starts Snort in intrusion detection mode.</li>
+<li><code>start_snort_ips.bat</code>: Starts Snort in intrusion prevention mode.</li>
+</ul>
+</li>
+<li>
+<p><strong>Email Notifications &amp; Reports:</strong></p>
+<ul>
+<li>Send alert summaries via email using customizable SMTP configurations.</li>
+<li>Generate timestamped text-based reports in the <code>reports/</code> directory.</li>
+</ul>
+</li>
+</ul>
+<h2>Technologies Used</h2>
+<ul>
+<li><strong>Programming:</strong> Java, JavaFX</li>
+<li><strong>Build Tool:</strong> Gradle</li>
+<li><strong>IDS/IPS Integration:</strong> Snort</li>
+<li><strong>File Configuration:</strong> JSON (for rules)</li>
+</ul>
+<h2>Screenshots</h2>
+<p><em>Include screenshots or placeholders here.</em></p>
+<p><a href="https://github.com/windwalker46/ZeroTrustTrafficAnalysis">GitHub Repository</a></p>
+
+
+  <a href="/">Back to Home</a>
+</div>
+
+  </main>
+  <footer>
+    <p>&copy; 2024 Ben Tran</p>
+  </footer>
+</body>
+</html>

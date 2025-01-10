@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Project 1: Personal Website",
+    "description": "A responsive personal portfolio website built with HTML, CSS, and JavaScript, showcasing my projects and skills.",
+    "technologies": ["HTML", "CSS", "JavaScript", "Eleventy"],
+    "github": "https://github.com/yourusername/personal-website",
+    "screenshots": [],
+    "instructions": null
+  },
+  {
+    "title": "Project 2: Python Automation Script",
+    "description": "A Python script that automates the process of generating reports from CSV data, saving significant time and effort.",
+    "technologies": ["Python", "Pandas", "CSV"],
+    "github": "https://github.com/yourusername/python-automation",
+    "screenshots": ["/assets/python-script-screenshot.png"],
+    "instructions": "1. Clone the repo.\n2. Install dependencies: `pip install pandas`.\n3. Run: `python generate_reports.py`"
+  },
+  {
+    "title": "Project 3: Java Data Management App",
+    "description": "A Java desktop application with a user-friendly GUI for managing and querying customer data, built with Swing.",
+    "technologies": ["Java", "Swing", "SQL"],
+    "github": "https://github.com/yourusername/java-data-app",
+    "screenshots": ["/assets/java-app-screenshot.png"],
+    "instructions": "1. Clone the repo.\n2. Compile: `javac *.java`\n3. Run: `java Main`"
+  }
+]

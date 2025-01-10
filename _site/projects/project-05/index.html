@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Shuffler and Organizer</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+  <main>
+    
+<div class="project-details">
+  <h1>File Shuffler and Organizer</h1>
+  <p>A Rust-based utility for shuffling, renaming, and organizing files in directories. The application supports recursive directory traversal, timestamp modification, and automated tasks, making it ideal for managing large datasets or file-based workflows.</p>
+
+  <div class="project-content">
+    <div class="project-info">
+      
+        <h3>Technologies Used:</h3>
+        <ul>
+          
+            <li>Rust</li>
+          
+            <li>Filetime</li>
+          
+            <li>Chrono</li>
+          
+            <li>Randomization</li>
+          
+        </ul>
+      
+
+      
+        <p><a href="https://github.com/windwalker46/File-shuffler-rust" target="_blank">GitHub Repository</a></p>
+      
+
+      
+        <h3>How to Run:</h3>
+        <pre><code class="language-bash">**Installation &amp; Setup:**
+1. Clone the repository:
+   ```
+   git clone https://github.com/windwalker46/File-shuffler-rust.git
+   cd File-shuffler-rust
+   ```
+
+2. Install dependencies:
+   Ensure you have Rust and Cargo installed. Then, build the project:
+   ```
+   cargo build --release
+   ```
+
+3. Run the application:
+   ```
+   cargo run --release
+   ```
+
+**Features:** - Shuffle and rename files with randomized names. - Traverse directories recursively, processing files and subdirectories. - Modify file timestamps (creation, access, and modification times). - Automated or manual task execution with configurable intervals.
+</code></pre>
+      
+    </div>
+
+    
+      <div class="project-images">
+        <h3>Screenshots:</h3>
+        
+          <img src="/assets/file_shuffler_terminal.jpg" alt="Screenshot of File Shuffler and Organizer">
+        
+          <img src="/assets/file_shuffler_output.jpg" alt="Screenshot of File Shuffler and Organizer">
+        
+      </div>
+    
+  </div>
+
+  <!-- Important: render the rest of the Markdown body -->
+  <h1>File Shuffler and Organizer</h1>
+<h2>Overview</h2>
+<p>The <em>File Shuffler and Organizer</em> is a utility tool written in Rust, designed for efficient file management. It provides functionalities to shuffle, rename, and organize files within directories. This tool is particularly useful for managing large datasets or preparing files for machine learning workflows, experiments, or other structured processing tasks.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>File Shuffling and Renaming:</strong> Randomizes file order and assigns new names in a sequential format (e.g., <code>001.csv</code>, <code>002.csv</code>).</li>
+<li><strong>Recursive Directory Traversal:</strong> Processes all files in a directory and its subdirectories, ensuring comprehensive coverage.</li>
+<li><strong>File Timestamp Modification:</strong> Randomizes file timestamps (creation, modification, and access times) to simulate new or altered files.</li>
+<li><strong>Configurable Task Automation:</strong> Supports manual execution or periodic automation at custom intervals.</li>
+<li><strong>Error Handling:</strong> Provides detailed error messages for any issues encountered during processing.</li>
+</ul>
+<h2>Usage Scenarios</h2>
+<ul>
+<li><strong>Dataset Preparation:</strong> Organize and anonymize files for machine learning or research.</li>
+<li><strong>File Archival:</strong> Randomize and reorganize files for archiving or backup purposes.</li>
+<li><strong>Simulation and Testing:</strong> Modify file attributes for testing software that relies on file metadata.</li>
+</ul>
+<h2>How to Use</h2>
+<ol>
+<li><strong>Run the Program:</strong> Launch the application using the command:</li>
+</ol>
+<ul>
+<li>cargo run --release</li>
+</ul>
+<ol start="2">
+<li><strong>Select Path Configuration:</strong></li>
+</ol>
+<ul>
+<li>Use default or alternate paths, or provide custom paths interactively.</li>
+</ul>
+<ol start="3">
+<li><strong>Choose Operation Mode:</strong></li>
+</ol>
+<ul>
+<li>Manual shuffle and rename.</li>
+<li>Automated runs every 30 seconds.</li>
+<li>Weekly task execution for long-term automation.</li>
+</ul>
+<ol start="4">
+<li><strong>Monitor Output:</strong> View detailed logs of processed files, including before and after states for renaming and timestamp changes.</li>
+</ol>
+<h2>Code Structure</h2>
+<ul>
+<li>
+<p><strong>Core Modules:</strong></p>
+</li>
+<li>
+<p><code>main.rs</code>: Entry point for the application.</p>
+</li>
+<li>
+<p><code>file_shuffler/</code>: Core logic for file renaming, timestamp updates, and directory traversal.</p>
+</li>
+<li>
+<p><strong>Dependencies:</strong></p>
+</li>
+<li>
+<p><code>rand</code>: Randomization for file order and timestamps.</p>
+</li>
+<li>
+<p><code>filetime</code>: Utilities for file timestamp manipulation.</p>
+</li>
+<li>
+<p><code>chrono</code>: Date and time utilities for detailed logging.</p>
+</li>
+</ul>
+<h2>Contributors</h2>
+<ul>
+<li><strong>Ben Tran</strong></li>
+<li><strong>Justin Halvorson</strong></li>
+<li><strong>Daniel Leone</strong></li>
+</ul>
+<p><a href="https://github.com/windwalker46/File-shuffler-rust">GitHub Repository</a></p>
+
+
+  <a href="/">Back to Home</a>
+</div>
+
+  </main>
+  <footer>
+    <p>&copy; 2024 Ben Tran</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>River Raid: Multiplayer Game with Client-Server Architecture</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+  <main>
+    
+<div class="project-details">
+  <h1>River Raid: Multiplayer Game with Client-Server Architecture</h1>
+  <p>A modernized multiplayer version of the classic *River Raid* game, featuring a client-server architecture, SSH communication, and real-time gameplay. Built using Python and designed to showcase advanced server-side integration and gameplay mechanics.</p>
+
+  <div class="project-content">
+    <div class="project-info">
+      
+        <h3>Technologies Used:</h3>
+        <ul>
+          
+            <li>Python</li>
+          
+            <li>Pygame</li>
+          
+            <li>Multithreading</li>
+          
+            <li>Paramiko</li>
+          
+            <li>SSH</li>
+          
+        </ul>
+      
+
+      
+        <p><a href="https://github.com/Justin-HAL/320-fa24-final-task" target="_blank">GitHub Repository</a></p>
+      
+
+      
+        <h3>How to Run:</h3>
+        <pre><code class="language-bash">**Installation &amp; Setup:**
+*Client Application:* 1. Clone the repository:
+   ```
+   git clone https://github.com/Justin-HAL/320-fa24-final-task.git
+   cd 320-fa24-final-task/standalone_app
+   ```
+2. Install dependencies:
+   ```
+   pip install -r ../requirements.txt
+   ```
+3. Run the client game:
+   ```
+   python main.py
+   ```
+
+*Server Application:* 1. Navigate to the server directory:
+   ```
+   cd ../river_raid/server
+   ```
+2. Install server-side dependencies (ensure `paramiko` is installed):
+   ```
+   pip install paramiko
+   ```
+3. Configure environment variables:
+   - `SERVER_HOST`: Default is `127.0.0.1`.
+   - `SERVER_PORT`: Default is `2200`.
+   - `SERVER_KEY_FILENAME`: Path to your RSA private key for SSH communication.
+
+4. Run the server:
+   ```
+   python main.py
+   ```
+
+**Gameplay Controls:** - Move Left/Right: Use the arrow keys. - Shoot: Press the Spacebar to fire missiles. - Quit: Press Q to exit the game.
+</code></pre>
+      
+    </div>
+
+    
+      <div class="project-images">
+        <h3>Screenshots:</h3>
+        
+          <img src="/assets/river_raid_client.jpg" alt="Screenshot of River Raid: Multiplayer Game with Client-Server Architecture">
+        
+          <img src="/assets/river_raid_server.jpg" alt="Screenshot of River Raid: Multiplayer Game with Client-Server Architecture">
+        
+      </div>
+    
+  </div>
+
+  <!-- Important: render the rest of the Markdown body -->
+  <h1>River Raid: Multiplayer Game with Client-Server Architecture</h1>
+<h2>Overview</h2>
+<p>This project is a modernized multiplayer remake of the classic <em>River Raid</em> game. The game showcases advanced client-server integration, real-time SSH communication, and multithreaded gameplay. Built as part of an operating systems course, the project explores server-side architecture and real-time game mechanics.</p>
+<h2>Key Features</h2>
+<ul>
+<li>
+<p><strong>Multiplayer Support:</strong></p>
+<ul>
+<li>Clients connect to the server over SSH, enabling synchronized gameplay.</li>
+<li>Players interact in real time with shared game states managed by the server.</li>
+</ul>
+</li>
+<li>
+<p><strong>Client-Side Game:</strong></p>
+<ul>
+<li>Built with Python and Pygame.</li>
+<li>Handles player movement, collision detection, and score tracking.</li>
+</ul>
+</li>
+<li>
+<p><strong>Server-Side Architecture:</strong></p>
+<ul>
+<li>Built with Python, using the Paramiko library for SSH communication.</li>
+<li>Includes a dedicated <code>GameManager</code> for processing player actions and managing the game state.</li>
+</ul>
+</li>
+<li>
+<p><strong>Gameplay Mechanics:</strong></p>
+<ul>
+<li><strong>Obstacles:</strong> Randomly spawned objects to avoid.</li>
+<li><strong>Fuel Management:</strong> Collect fuel to survive; running out of fuel results in losing a life.</li>
+<li><strong>Shooting:</strong> Destroy obstacles for points.</li>
+<li><strong>Lives:</strong> Start with 3 lives; collisions or running out of fuel reduce lives.</li>
+</ul>
+</li>
+<li>
+<p><strong>Real-Time Communication:</strong></p>
+<ul>
+<li>Server processes client actions and updates the game state.</li>
+<li>Uses JSON-based message serialization and deserialization.</li>
+</ul>
+</li>
+<li>
+<p><strong>Custom Batch Scripts:</strong></p>
+<ul>
+<li>Server-side batch scripts simplify deployment and management.</li>
+</ul>
+</li>
+</ul>
+<h2>Technologies Used</h2>
+<ul>
+<li><strong>Client-Side:</strong> Python, Pygame</li>
+<li><strong>Server-Side:</strong> Python, Paramiko (SSH)</li>
+<li><strong>Networking:</strong> JSON serialization/deserialization, socket programming</li>
+<li><strong>Game Concepts:</strong> Multithreading, shared memory synchronization</li>
+</ul>
+<h2>Directory Structure</h2>
+<ul>
+<li><strong>Standalone App:</strong>
+<ul>
+<li><code>standalone_app/</code>: Contains the standalone client-side game application.</li>
+</ul>
+</li>
+<li><strong>Server:</strong>
+<ul>
+<li><code>river_raid/server</code>: Server-side code with game logic, network handling, and SSH integration.</li>
+<li>Includes:
+<ul>
+<li><code>network/</code>: SSH server and communication handling.</li>
+<li><code>game/</code>: Core game management and entity handling.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>How to Play</h2>
+<ol>
+<li><strong>Run the Server:</strong> Start the server application.</li>
+<li><strong>Connect Clients:</strong> Launch client instances to join the game.</li>
+<li><strong>Play the Game:</strong>
+<ul>
+<li>Use the arrow keys to navigate.</li>
+<li>Collect fuel and shoot obstacles to score points.</li>
+<li>Avoid running out of fuel or colliding with obstacles.</li>
+</ul>
+</li>
+</ol>
+<h2>Contributors</h2>
+<ul>
+<li><strong>Ben Tran</strong></li>
+<li><strong>Justin Halvorson</strong></li>
+<li><strong>Daniel Leone</strong></li>
+</ul>
+<p><a href="https://github.com/Justin-HAL/320-fa24-final-task">GitHub Repository</a></p>
+
+
+  <a href="/">Back to Home</a>
+</div>
+
+  </main>
+  <footer>
+    <p>&copy; 2024 Ben Tran</p>
+  </footer>
+</body>
+</html>
