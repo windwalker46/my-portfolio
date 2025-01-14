@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/contact/">Contact</a>
+    <div class="container">
+      <div class="logo">
+        <a href="/">Ben Tran</a>
+      </div>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
   </nav>
-  <main>
+  <main class="container">
     
 <h1>My Projects</h1>
 
@@ -21,7 +31,7 @@
       <h2><a href="/projects/project-01/">ABCD Project: Photo Blogging Platform</a></h2>
       <p>The ABCD Project is a photo blogging platform that enables users to create, manage, and explore blogs. It provides tailored functionalities for visito...</p>
       
-        <p>Tech: PHP, JavaScript, CSS</p>
+        <p><strong>Tech:</strong> PHP, JavaScript, CSS</p>
       
     </div>
   
@@ -29,7 +39,7 @@
       <h2><a href="/projects/project-02/">Zero Trust Network Traffic Analysis</a></h2>
       <p>A JavaFX application for real-time network traffic analysis focused on Zero Trust security and anomaly detection. The system integrates with Snort for...</p>
       
-        <p>Tech: Java, JavaFX, Snort, Gradle</p>
+        <p><strong>Tech:</strong> Java, JavaFX, Snort, Gradle</p>
       
     </div>
   
@@ -37,7 +47,7 @@
       <h2><a href="/projects/project-03/">Multithreaded Pac-Man Game</a></h2>
       <p>A multithreaded version of the classic Pac-Man game developed in Python. The game features real-time gameplay using Pygame, with synchronized multithr...</p>
       
-        <p>Tech: Python, Pygame, Multithreading</p>
+        <p><strong>Tech:</strong> Python, Pygame, Multithreading</p>
       
     </div>
   
@@ -45,7 +55,7 @@
       <h2><a href="/projects/project-04/">River Raid: Multiplayer Game with Client-Server Architecture</a></h2>
       <p>A modernized multiplayer version of the classic *River Raid* game, featuring a client-server architecture, SSH communication, and real-time gameplay. ...</p>
       
-        <p>Tech: Python, Pygame, Multithreading, Paramiko, SSH</p>
+        <p><strong>Tech:</strong> Python, Pygame, Multithreading, Paramiko, SSH</p>
       
     </div>
   
@@ -53,7 +63,7 @@
       <h2><a href="/projects/project-05/">File Shuffler and Organizer</a></h2>
       <p>A Rust-based utility for shuffling, renaming, and organizing files in directories. The application supports recursive directory traversal, timestamp m...</p>
       
-        <p>Tech: Rust, Filetime, Chrono, Randomization</p>
+        <p><strong>Tech:</strong> Rust, Filetime, Chrono, Randomization</p>
       
     </div>
   
@@ -61,7 +71,7 @@
       <h2><a href="/projects/project-06/">Lynxtronics Company Website</a></h2>
       <p>Coming Soon..</p>
       
-        <p>Tech: N/A</p>
+        <p><strong>Tech:</strong> N/A</p>
       
     </div>
   
@@ -74,9 +84,10 @@
 
   
 </div>
+
   </main>
   <footer>
-    <p>&copy; 2024 Ben Tran</p>
+    <p>&copy; 2024 Ben Tran | <a href="https://github.com/windwalker46">GitHub</a></p>
   </footer>
 </body>
 </html>

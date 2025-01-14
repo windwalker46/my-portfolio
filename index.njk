@@ -16,7 +16,7 @@ permalink: "{% if pagination.pageNumber > 0 %}index-{{ pagination.pageNumber + 1
       <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
       <p>{{ project.data.description | truncate(150, "...") }}</p>
       {% if project.data.technologies %}
-        <p>Tech: {{ project.data.technologies | join(", ") }}</p>
+        <p><strong>Tech:</strong> {{ project.data.technologies | join(", ") }}</p>
       {% endif %}
     </div>
   {% endfor %}
@@ -29,7 +29,7 @@ permalink: "{% if pagination.pageNumber > 0 %}index-{{ pagination.pageNumber + 1
 
   {% for pageNumber in pagination.pageNumbers %}
     {% set label = pageNumber + 1 %}
-     <a href="index-{{ label }}.html">{{ label }}</a>
+    <a href="index-{{ label }}.html">{{ label }}</a>
   {% endfor %}
 
   {% if pagination.nextPageHref %}
