@@ -20,7 +20,7 @@ instructions: >
      - Deploy files to your web server's document root.
      - Access the platform via `http://localhost/photo_abcd_B`.
 screenshots:
-  - /assets/c68urvjthep61.png
+  - \assets\book.jpg
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---

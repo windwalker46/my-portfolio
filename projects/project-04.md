@@ -46,7 +46,7 @@ instructions: >
   - Quit: Press Q to exit the game.
 
 screenshots:
-  - /assets/c68urvjthep61.png
+  - \assets\riverRaid.jpg
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---

@@ -30,7 +30,7 @@ instructions: >
   - Ghosts with unique AI behaviors (chase and random movement).
   - Pygame-powered real-time graphics and interactions.
 screenshots:
-  - /assets/c68urvjthep61.png
+  - \assets\pacMan.jpg
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---

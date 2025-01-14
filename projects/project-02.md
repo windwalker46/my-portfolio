@@ -24,7 +24,7 @@ instructions: >
   - Demo mode for testing without Snort.
   - JavaFX GUI for alert management, email notifications, and report generation.
 screenshots:
-  - /assets/c68urvjthep61.png
+  - \assets\zeroTrust.jpg
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---

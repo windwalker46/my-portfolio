@@ -30,7 +30,7 @@ instructions: >
   - Automated or manual task execution with configurable intervals.
 
 screenshots:
-  - /assets/c68urvjthep61.png
+  - \assets\fileShuffler.jpg
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---
