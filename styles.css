@@ -71,11 +71,12 @@ h1 {
 }
 
 .project {
-    background-color: #161b22; /* Slightly lighter background for contrast */
+    background-color: #161b22;
     border-radius: 12px;
     padding: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #21262d;
+    text-align: center; /* Center content */
 }
 
 .project:hover {
@@ -90,6 +91,27 @@ h1 {
 
 .project p {
     margin-bottom: 1rem;
+}
+
+/* Thumbnail Image */
+.project-thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Screenshot Styling */
+.project-images .screenshot {
+    max-width: 100%;        
+    height: auto;           
+    margin: 20px auto;      
+    border-radius: 8px;     /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    display: block;         /* Center align in its container */
+    max-height: 400px;     
+    object-fit: cover;     
 }
 
 /* Footer */

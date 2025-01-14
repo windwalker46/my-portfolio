@@ -6,7 +6,7 @@ github: "https://github.com/sjasthi/photo_abcd_B"
 instructions: >
   **Installation & Setup:**
   1. Clone the repository:
-     ```
+     ```bash
      git clone https://github.com/sjasthi/photo_abcd_B.git
      cd photo_abcd_B
      ```
@@ -20,12 +20,10 @@ instructions: >
      - Deploy files to your web server's document root.
      - Access the platform via `http://localhost/photo_abcd_B`.
 screenshots:
-  - /assets/screenshot1.jpg
+  - /assets/c68urvjthep61.png
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---
-
-# ABCD Project: Photo Blogging Platform
 
 ## Overview
 
@@ -54,9 +52,3 @@ The ABCD Project is a photo blogging platform that enables users to create, mana
 - PHP, JavaScript, CSS
 - MySQL or MariaDB
 - Apache/Nginx Web Server
-
-## Screenshots
-
-*Include screenshots or leave this as a placeholder if unavailable.*
-
-[GitHub Repository](https://github.com/sjasthi/photo_abcd_B)  

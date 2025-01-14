@@ -30,7 +30,7 @@ instructions: >
   - Ghosts with unique AI behaviors (chase and random movement).
   - Pygame-powered real-time graphics and interactions.
 screenshots:
-  - /assets/screenshot2.jpg
+  - /assets/c68urvjthep61.png
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---
@@ -81,4 +81,3 @@ This project is a modernized, multithreaded version of the classic Pac-Man game,
 - **Daniel Leone**
 - **Justin Halvorson**
 
-[GitHub Repository](https://github.com/Justin-HAL/320-fa24-Final-Exam)

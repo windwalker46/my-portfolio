@@ -30,8 +30,7 @@ instructions: >
   - Automated or manual task execution with configurable intervals.
 
 screenshots:
-  - /assets/file_shuffler_terminal.jpg
-  - /assets/file_shuffler_output.jpg
+  - /assets/c68urvjthep61.png
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---
@@ -59,10 +58,9 @@ The *File Shuffler and Organizer* is a utility tool written in Rust, designed fo
 ## How to Use
 
 1. **Run the Program:** Launch the application using the command:
-- cargo run --release
+cargo run --release
 
-2. **Select Path Configuration:**
-- Use default or alternate paths, or provide custom paths interactively.
+2. **Select Path Configuration:** Choose default or custom paths interactively.
 3. **Choose Operation Mode:**
 - Manual shuffle and rename.
 - Automated runs every 30 seconds.
@@ -85,5 +83,3 @@ The *File Shuffler and Organizer* is a utility tool written in Rust, designed fo
 - **Ben Tran**
 - **Justin Halvorson**
 - **Daniel Leone**
-
-[GitHub Repository](https://github.com/windwalker46/File-shuffler-rust)

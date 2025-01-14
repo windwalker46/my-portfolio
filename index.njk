@@ -13,6 +13,9 @@ permalink: "{% if pagination.pageNumber > 0 %}index-{{ pagination.pageNumber + 1
 <div class="project-grid">
   {% for project in paginatedProjects %}
     <div class="project">
+      {% if project.data.screenshots and project.data.screenshots[0] %}
+        <img src="{{ project.data.screenshots[0] }}" alt="Screenshot of {{ project.data.title }}" class="project-thumbnail">
+      {% endif %}
       <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
       <p>{{ project.data.description | truncate(150, "...") }}</p>
       {% if project.data.technologies %}

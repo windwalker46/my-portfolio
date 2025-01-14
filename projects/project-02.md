@@ -24,7 +24,7 @@ instructions: >
   - Demo mode for testing without Snort.
   - JavaFX GUI for alert management, email notifications, and report generation.
 screenshots:
-  - /assets/screenshot1.jpg
+  - /assets/c68urvjthep61.png
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---
@@ -68,8 +68,3 @@ This project is a real-time network traffic monitoring and alerting system built
 - **IDS/IPS Integration:** Snort
 - **File Configuration:** JSON (for rules)
 
-## Screenshots
-
-*Include screenshots or placeholders here.*
-
-[GitHub Repository](https://github.com/windwalker46/ZeroTrustTrafficAnalysis)

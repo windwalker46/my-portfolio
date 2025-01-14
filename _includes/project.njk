@@ -3,10 +3,15 @@ layout: layouts/base.njk
 ---
 
 <div class="project-details">
+  <!-- Title -->
   <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
 
+  <!-- Description -->
+  <p class="description">{{ description }}</p>
+
+  <!-- Project Content -->
   <div class="project-content">
+    <!-- Project Information -->
     <div class="project-info">
       {% if technologies %}
         <h3>Technologies Used:</h3>
@@ -27,18 +32,22 @@ layout: layouts/base.njk
       {% endif %}
     </div>
 
+    <!-- Screenshots -->
     {% if screenshots and screenshots.length %}
       <div class="project-images">
-        <h3>Screenshots:</h3>
+        <h3>Project Screenshots:</h3>
         {% for screenshot in screenshots %}
-          <img src="{{ screenshot }}" alt="Screenshot of {{ title }}">
+          <img src="{{ screenshot }}" alt="Screenshot of {{ title }}" class="screenshot" />
         {% endfor %}
       </div>
     {% endif %}
   </div>
 
-  <!-- Important: render the rest of the Markdown body -->
-  {{ content | safe }}
+  <!-- Render Additional Markdown Content -->
+  <div class="markdown-content">
+    {{ content | safe }}
+  </div>
 
-  <a href="/">Back to Home</a>
+  <!-- Back to Home -->
+  <p class="back-to-home"><a href="/">Back to Home</a></p>
 </div>

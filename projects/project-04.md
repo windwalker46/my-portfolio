@@ -46,8 +46,7 @@ instructions: >
   - Quit: Press Q to exit the game.
 
 screenshots:
-  - /assets/river_raid_client.jpg
-  - /assets/river_raid_server.jpg
+  - /assets/c68urvjthep61.png
 permalink: "/projects/{{ page.fileSlug }}/index.html"
 layout: "project.njk"
 ---
@@ -92,16 +91,6 @@ This project is a modernized multiplayer remake of the classic *River Raid* game
 - **Networking:** JSON serialization/deserialization, socket programming
 - **Game Concepts:** Multithreading, shared memory synchronization
 
-## Directory Structure
-
-- **Standalone App:** 
-  - `standalone_app/`: Contains the standalone client-side game application.
-- **Server:**
-  - `river_raid/server`: Server-side code with game logic, network handling, and SSH integration.
-  - Includes:
-    - `network/`: SSH server and communication handling.
-    - `game/`: Core game management and entity handling.
-
 ## How to Play
 
 1. **Run the Server:** Start the server application.
@@ -116,5 +105,3 @@ This project is a modernized multiplayer remake of the classic *River Raid* game
 - **Ben Tran**
 - **Justin Halvorson**
 - **Daniel Leone**
-
-[GitHub Repository](https://github.com/Justin-HAL/320-fa24-final-task)
