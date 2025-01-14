@@ -22,9 +22,10 @@
     </div>
   </nav>
   <main class="container">
-    <h1>Contact Me</h1>
+    
+<h1 class="page-title">Contact Me</h1>
 
-<p>Feel free to reach out to me through any of the methods below:</p>
+<p class="page-description">Feel free to reach out to me through any of the methods below:</p>
 
 <!-- Contact Details -->
 <div class="contact-details">
@@ -33,6 +34,36 @@
   <p><strong>Twitter:</strong> <a href="https://twitter.com/YOUR-TWITTER" target="_blank">@BenTran</a></p>
 </div>
 
+<!-- Contact Form -->
+<div class="contact-wrapper">
+  <form class="contact-form" action="https://formsubmit.co/cd20fe2e3956cd175b90af162ef31354" method="POST">
+    <!-- Hidden Inputs for FormSubmit Configuration -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission!">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Name Input -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+
+    <!-- Email Input -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+    </div>
+
+    <!-- Message Input -->
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</div>
 
   </main>
   <footer>
