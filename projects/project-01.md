@@ -6,10 +6,9 @@ github: "https://github.com/sjasthi/photo_abcd_B"
 instructions: >
   **Installation & Setup:**
   1. Clone the repository:
-     ```bash
      git clone https://github.com/sjasthi/photo_abcd_B.git
      cd photo_abcd_B
-     ```
+
   2. Set up the database:
      - Import SQL scripts from `scripts/setup.php`.
 

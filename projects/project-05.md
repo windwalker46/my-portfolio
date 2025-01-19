@@ -7,21 +7,15 @@ instructions: >
   **Installation & Setup:**
 
   1. Clone the repository:
-     ```
      git clone https://github.com/windwalker46/File-shuffler-rust.git
      cd File-shuffler-rust
-     ```
 
   2. Install dependencies:
      Ensure you have Rust and Cargo installed. Then, build the project:
-     ```
      cargo build --release
-     ```
 
   3. Run the application:
-     ```
      cargo run --release
-     ```
 
   **Features:**
   - Shuffle and rename files with randomized names.

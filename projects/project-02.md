@@ -6,10 +6,9 @@ github: "https://github.com/windwalker46/ZeroTrustTrafficAnalysis"
 instructions: >
   **Installation & Setup:**
   1. Clone the repository:
-     ```
      git clone https://github.com/windwalker46/ZeroTrustTrafficAnalysis.git
      cd ZeroTrustTrafficAnalysis
-     ```
+
   2. Run the application:
      - For Linux/macOS: `./gradlew clean build run`
      - For Windows: `.\gradlew clean build run`

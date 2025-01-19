@@ -8,37 +8,32 @@ instructions: >
 
   *Client Application:*
   1. Clone the repository:
-     ```
      git clone https://github.com/Justin-HAL/320-fa24-final-task.git
      cd 320-fa24-final-task/standalone_app
-     ```
+
   2. Install dependencies:
-     ```
+
      pip install -r ../requirements.txt
-     ```
+ 
   3. Run the client game:
-     ```
      python main.py
-     ```
+ 
 
   *Server Application:*
   1. Navigate to the server directory:
-     ```
      cd ../river_raid/server
-     ```
+
   2. Install server-side dependencies (ensure `paramiko` is installed):
-     ```
      pip install paramiko
-     ```
+
   3. Configure environment variables:
      - `SERVER_HOST`: Default is `127.0.0.1`.
      - `SERVER_PORT`: Default is `2200`.
      - `SERVER_KEY_FILENAME`: Path to your RSA private key for SSH communication.
 
   4. Run the server:
-     ```
      python main.py
-     ```
+
 
   **Gameplay Controls:**
   - Move Left/Right: Use the arrow keys.

@@ -6,18 +6,15 @@ github: "https://github.com/Justin-HAL/320-fa24-Final-Exam"
 instructions: >
   **Installation & Setup:**
   1. Clone the repository:
-     ```
      git clone https://github.com/Justin-HAL/320-fa24-Final-Exam.git
      cd 320-fa24-Final-Exam
-     ```
+
   2. Install dependencies:
-     ```
      pip install pygame
-     ```
+
   3. Run the game:
-     ```
      python main.py
-     ```
+
 
   **Gameplay:**
   - Use keyboard controls to move Pac-Man and collect dots and power-ups.
