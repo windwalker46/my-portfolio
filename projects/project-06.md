@@ -28,18 +28,6 @@ layout: "project.njk"
 - **WebGL Build Support** – Optimized for browser-based play.
 - **UI Integration** – TextMeshPro, Buttons, Animations.
 
-## Screenshots
-
-{% if screenshots and screenshots.length %}
-### Game Preview
-
-{% for screenshot in screenshots %}
-<img src="{{ screenshot }}" alt="Screenshot of Woof Clicker" class="screenshot" />
-{% endfor %}
-{% else %}
-No screenshots available.
-{% endif %}
-
 ## Play Woof Clicker 🎮
 <iframe frameborder="0" src="https://itch.io/embed/3307199" width="552" height="167">
   <a href="https://h0wl06.itch.io/woof-clicker">🐶 Woof Clicker by h0wl06</a>
