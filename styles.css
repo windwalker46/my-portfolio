@@ -3,17 +3,20 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.7;
     color: #e4e4e4;
-    background: linear-gradient(270deg, #0d1117, #1a1f2d, #2d3748, #161b22);
-    background-size: 400% 400%;
-    animation: gradientBG 12s ease infinite;
+    background: linear-gradient(270deg, #0d1117, #131a25, #1a2230, #161b22);
+    background-size: 350% 350%;
+    animation: gradientBG 10s ease-in-out infinite;
     margin: 0;
 }
 
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
+    25% { background-position: 50% 60%; }
     50% { background-position: 100% 50%; }
+    75% { background-position: 50% 40%; }
     100% { background-position: 0% 50%; }
 }
+
 
 h1, h2, h3, p, a, nav, footer {
     margin: 0;
@@ -89,7 +92,8 @@ h1 {
 
 .project:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(100, 181, 246, 0.3); /* Blue glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project h2 {
