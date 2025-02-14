@@ -1,24 +1,25 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const starsContainer = document.createElement("div");
-    starsContainer.id = "stars-container";
-    document.body.appendChild(starsContainer);
+function createStar() {
+    const star = document.createElement("div");
+    star.classList.add("star");
+    star.innerHTML = "✦"; // Twinkling effect
+    document.getElementById("stars-container").appendChild(star);
 
-    function createStar() {
-        const star = document.createElement("div");
-        star.classList.add("star");
-        star.innerHTML = "✦";  // Unicode star symbol
-        star.style.left = Math.random() * window.innerWidth + "px";
-        star.style.top = Math.random() * window.innerHeight + "px";
-        star.style.animationDuration = `${3 + Math.random() * 3}s`; // Random twinkle duration
-        star.style.fontSize = `${8 + Math.random() * 5}px`; // Slight variation in size
+    // Position anywhere within the entire page height
+    const pageHeight = document.documentElement.scrollHeight;
+    const pageWidth = document.documentElement.clientWidth;
 
-        starsContainer.appendChild(star);
+    star.style.left = Math.random() * pageWidth + "px";
+    star.style.top = Math.random() * pageHeight + "px";
 
-        setTimeout(() => {
-            star.remove();
-        }, 4000);  // Remove after animation completes
-    }
+    setTimeout(() => {
+        star.remove();
+    }, 4000); // Adjust time before disappearing
+}
 
-    // Generate stars at random intervals
-    setInterval(createStar, 800);  // Adjust interval for more or fewer stars
+// Generate stars at intervals
+setInterval(createStar, 200);
+
+// Reposition stars on resize to cover the full page
+window.addEventListener("resize", () => {
+    document.getElementById("stars-container").style.height = document.documentElement.scrollHeight + "px";
 });

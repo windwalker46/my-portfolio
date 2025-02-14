@@ -35,17 +35,19 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* 🌟 Twinkling Stars Effect */
+/* 🌟 Star Container (Now Covers Entire Page) */
 #stars-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto; /* Adjusts dynamically to full scroll height */
+    min-height: 100vh; /* Ensures at least viewport height */
     pointer-events: none;
-    z-index: -1; /* Stays behind content */
+    z-index: -1;
 }
 
+/* ✨ Star Effect */
 .star {
     position: absolute;
     color: white;
