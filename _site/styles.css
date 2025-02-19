@@ -333,14 +333,11 @@ footer a:hover {
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    
-    /* Background Image */
-    background: url("/assets/hero-bg.jpg") center/cover no-repeat;
-    
-    /* Dark Overlay to Keep Text Readable */
     position: relative;
+    overflow: hidden;
 }
 
+/* Background Image - Locked to Avoid Zoom Issues */
 .hero::before {
     content: "";
     position: absolute;
@@ -348,14 +345,30 @@ footer a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
-    z-index: 1;
+    background: url("/assets/hero-bg.jpg") no-repeat center center;
+    background-size: cover;
+    transform: scale(1);
+    will-change: transform;
+    z-index: -2;
 }
 
+/* Dark Overlay */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Hero Content */
 .hero-content {
     max-width: 800px;
     padding: 20px;
-    position: relative; /* Ensures text stays above overlay */
+    position: relative;
     z-index: 2;
 }
 
@@ -486,19 +499,50 @@ footer a:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) { 
-    nav .container {
-        transform: scale(0.75); /* Shrink navbar to 75% size */
-        transform-origin: top center; 
+    .hero {
+        padding-top: 80px;
+    }
+
+    nav {
+        border-bottom: 0.8px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 0.1rem;
+    }
+    .logo a {
+        font-size: 1rem;
     }
 
     nav .nav-links {
         display: flex;
-        gap: 15px; 
+        justify-content: center; 
+        flex-wrap: nowrap; 
+        gap: 1px; 
     }
 
     nav .nav-links a {
-        font-size: 0.9rem; /* Slightly smaller font */
-        padding: 10px 12px; 
+        font-size: .9rem; 
+        padding: 2px 2px; 
+        white-space: nowrap; 
+        flex: 0 1 auto;
+    }
+}
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 768px) {
+        .hero {
+            min-height: 90vh;
+            padding-top: 5rem;
+        }
+
+        .hero::before {
+            background-attachment: scroll !important;
+            background-size: cover !important;
+            background-position: center !important;
+            min-height: 90vh;
+            padding-top: 5rem;
+            transform: none !important;
+        }
+        .hero-buttons {
+            gap: 10px;
+        }
     }
 }
 
