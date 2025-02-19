@@ -483,3 +483,13 @@ footer a:hover {
     color: #bbb;
     margin-bottom: 1.5rem;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) { 
+    body {
+        transform: scale(0.75);
+        transform-origin: top center; /* Ensures it scales from the top */
+        width: 133.33%; 
+        overflow-x: hidden; 
+    }
+}
