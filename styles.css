@@ -486,25 +486,21 @@ footer a:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) { 
-    nav {
-        height: 50px; /* Forces a consistent navbar height */
-        padding: 5px 0;
-        overflow: hidden;
+    .hero {
+        padding-top: 80px; /* Adjust as needed */
     }
-
+    
     nav .nav-links {
         display: flex;
         justify-content: center; 
         flex-wrap: nowrap; 
-        gap: 1px;
+        gap: 1px; 
     }
 
     nav .nav-links a {
-        font-size: 0.9rem;
+        font-size: .9rem; 
         padding: 2px 2px; 
-        white-space: nowrap;
+        white-space: nowrap; 
         flex: 0 1 auto;
-        line-height: 1.2; 
     }
 }
-
