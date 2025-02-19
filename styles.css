@@ -487,12 +487,13 @@ footer a:hover {
 /* Mobile Responsiveness */
 @media (max-width: 768px) { 
     nav .nav-links {
-        display: flex;
-        gap: 5px; 
+        gap: 12px; 
+        flex-wrap: nowrap; 
     }
 
     nav .nav-links a {
-        padding: 10px 12px; 
+        font-size: 0.9rem; 
+        padding: 8px 10px; 
     }
 }
 
