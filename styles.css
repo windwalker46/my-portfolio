@@ -492,10 +492,10 @@ footer a:hover {
 
     nav {
         border-bottom: 0.8px solid rgba(255, 255, 255, 0.1);
-        padding-bottom: 0.2rem;
+        padding-bottom: 0.1rem;
     }
     .logo a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     nav .nav-links {
