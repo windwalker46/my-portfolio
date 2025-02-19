@@ -1,41 +1,51 @@
 ---
 layout: layouts/base.njk
 title: Home
-pagination:
-  data: collections.projects
-  size: 8
-  alias: paginatedProjects
-permalink: "{% if pagination.pageNumber > 0 %}index-{{ pagination.pageNumber + 1 }}.html{% else %}index.html{% endif %}"
+permalink: "/"
 ---
 
-<h1>My Projects</h1>
-
-<div class="project-grid">
-  {% for project in paginatedProjects %}
-    <div class="project">
-      {% if project.data.screenshots and project.data.screenshots[0] %}
-        <img src="{{ project.data.screenshots[0] }}" alt="Screenshot of {{ project.data.title }}" class="project-thumbnail">
-      {% endif %}
-      <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
-      <p>{{ project.data.description | truncate(150, "...") }}</p>
-      {% if project.data.technologies %}
-        <p><strong>Tech:</strong> {{ project.data.technologies | join(", ") }}</p>
-      {% endif %}
+<div class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm Ben Tran 👋</h1>
+    <p>I'm a **Software Developer** passionate about building scalable applications, optimizing performance, and solving real-world problems with code.</p>
+    <p>Welcome to my portfolio—check out my latest projects, skills, and what I’m working on.</p>
+    <div class="hero-buttons">
+      <a href="/projects/" class="btn-primary">View My Work</a>
+      <a href="/contact/" class="btn-secondary">Get in Touch</a>
     </div>
-  {% endfor %}
+  </div>
 </div>
 
-<div class="pagination">
-  {% if pagination.previousPageHref %}
-    <a href="{{ pagination.previousPageHref }}">« Prev</a>
-  {% endif %}
+<!-- Featured Projects Section -->
+<section class="featured-projects">
+  <h2>Featured Projects</h2>
+  <div class="project-grid">
+    {% for project in collections.projects | slice(0, 3) %}
+      <div class="project">
+        {% if project.data.screenshots and project.data.screenshots[0] %}
+          <img src="{{ project.data.screenshots[0] }}" alt="Screenshot of {{ project.data.title }}" class="project-thumbnail">
+        {% endif %}
+        <h3><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+        <p>{{ project.data.description | truncate(100, "...") }}</p>
+        <a href="{{ project.url }}" class="btn-secondary">Learn More</a>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="see-more">
+    <a href="/projects/" class="btn-primary">See All Projects</a>
+  </div>
+</section>
 
-  {% for pageNumber in pagination.pageNumbers %}
-    {% set label = pageNumber + 1 %}
-    <a href="index-{{ label }}.html">{{ label }}</a>
-  {% endfor %}
+<!-- About Section -->
+<section class="about">
+  <h2>About Me</h2>
+  <p>I'm a software engineer with experience in **web development, game design, and backend systems**. When I’m not coding, I’m exploring new tech, gaming, or working on personal projects.</p>
+  <a href="/about/" class="btn-secondary">More About Me</a>
+</section>
 
-  {% if pagination.nextPageHref %}
-    <a href="{{ pagination.nextPageHref }}">Next »</a>
-  {% endif %}
-</div>
+<!-- Call to Action -->
+<section class="cta">
+  <h2>Let’s Build Something Great</h2>
+  <p>If you're looking for a developer, collaborator, or just want to chat, feel free to reach out!</p>
+  <a href="/contact/" class="btn-primary">Contact Me</a>
+</section>

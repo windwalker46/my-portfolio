@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+title: Projects
+pagination:
+  data: collections.projects
+  size: 8
+  alias: paginatedProjects
+permalink: "/projects/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}.html{% else %}index.html{% endif %}"
+---
+
+<h1>My Projects</h1>
+<p>Explore the software and applications I've built.</p>
+
+<div class="project-grid">
+  {% for project in paginatedProjects %}
+    <div class="project">
+      {% if project.data.screenshots and project.data.screenshots[0] %}
+        <img src="{{ project.data.screenshots[0] }}" alt="Screenshot of {{ project.data.title }}" class="project-thumbnail">
+      {% endif %}
+      <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
+      <p>{{ project.data.description | truncate(150, "...") }}</p>
+      {% if project.data.technologies %}
+        <p><strong>Tech:</strong> {{ project.data.technologies | join(", ") }}</p>
+      {% endif %}
+      <a href="{{ project.url }}" class="btn-secondary">View Project</a>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if pagination.previousPageHref %}
+    <a href="{{ pagination.previousPageHref }}">« Prev</a>
+  {% endif %}
+
+  {% for pageNumber in pagination.pageNumbers %}
+    {% set label = pageNumber + 1 %}
+    <a href="/projects/page-{{ label }}.html">{{ label }}</a>
+  {% endfor %}
+
+  {% if pagination.nextPageHref %}
+    <a href="{{ pagination.nextPageHref }}">Next »</a>
+  {% endif %}
+</div>
