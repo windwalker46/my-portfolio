@@ -489,7 +489,12 @@ footer a:hover {
     .hero {
         padding-top: 80px; /* Adjust as needed */
     }
-    
+
+    nav {
+        border-bottom: 0.8px solid rgba(255, 255, 255, 0.1); /* Slightly thinner border */
+        padding-bottom: 0.2rem; /* Reduces extra bottom padding */
+    }
+
     nav .nav-links {
         display: flex;
         justify-content: center; 
