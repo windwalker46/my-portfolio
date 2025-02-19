@@ -487,12 +487,15 @@ footer a:hover {
 /* Mobile Responsiveness */
 @media (max-width: 768px) { 
     .hero {
-        padding-top: 80px; /* Adjust as needed */
+        padding-top: 80px;
     }
 
     nav {
-        border-bottom: 0.8px solid rgba(255, 255, 255, 0.1); /* Slightly thinner border */
-        padding-bottom: 0.2rem; /* Reduces extra bottom padding */
+        border-bottom: 0.8px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 0.2rem;
+    }
+    .logo a {
+        font-size: 1.2rem;
     }
 
     nav .nav-links {
