@@ -512,3 +512,15 @@ footer a:hover {
         flex: 0 1 auto;
     }
 }
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 768px) {
+        .hero {
+            min-height: 90vh;
+            padding-top: 5rem;
+        }
+        
+        .hero-buttons {
+            gap: 10px;
+        }
+    }
+}
