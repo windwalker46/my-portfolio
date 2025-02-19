@@ -490,12 +490,12 @@ footer a:hover {
         display: flex;
         justify-content: center; 
         flex-wrap: nowrap; 
-        gap: 2px; 
+        gap: 1px; 
     }
 
     nav .nav-links a {
         font-size: .9rem; 
-        padding: 4px 4px; 
+        padding: 2px 2px; 
         white-space: nowrap; 
         flex: 0 1 auto;
     }
