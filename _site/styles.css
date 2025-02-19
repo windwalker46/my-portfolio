@@ -486,10 +486,19 @@ footer a:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) { 
-    body {
-        transform: scale(0.75);
-        transform-origin: top center; /* Ensures it scales from the top */
-        width: 133.33%; 
-        overflow-x: hidden; 
+    nav .container {
+        transform: scale(0.75); /* Shrink navbar to 75% size */
+        transform-origin: top center; 
+    }
+
+    nav .nav-links {
+        display: flex;
+        gap: 15px; 
+    }
+
+    nav .nav-links a {
+        font-size: 0.9rem; /* Slightly smaller font */
+        padding: 10px 12px; 
     }
 }
+
