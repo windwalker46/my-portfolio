@@ -515,6 +515,9 @@ footer a:hover {
 @supports (-webkit-touch-callout: none) {
     @media (max-width: 768px) {
         .hero {
+            background-attachment: scroll !important;
+            background-size: cover;
+            background-position: center;
             min-height: 90vh;
             padding-top: 5rem;
         }
