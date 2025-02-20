@@ -337,9 +337,8 @@ footer a:hover {
     overflow: hidden;
 }
 
-/* Background Image - Locked to Avoid Zoom Issues */
-.hero::before {
-    content: "";
+/* Hero Background as Separate Div */
+.hero-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -347,14 +346,11 @@ footer a:hover {
     height: 100%;
     background: url("/assets/hero-bg.jpg") no-repeat center center;
     background-size: cover;
-    transform: scale(1);
-    will-change: transform;
     z-index: -2;
 }
 
 /* Dark Overlay */
-.hero::after {
-    content: "";
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -532,12 +528,10 @@ footer a:hover {
             padding-top: 5rem;
         }
 
-        .hero::before {
+        .hero-bg {
             background-attachment: scroll !important;
             background-size: cover !important;
             background-position: center !important;
-            min-height: 90vh;
-            padding-top: 5rem;
             transform: none !important;
         }
         .hero-buttons {
